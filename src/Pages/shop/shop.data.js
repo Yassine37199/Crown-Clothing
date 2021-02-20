@@ -67,26 +67,26 @@ const SHOP_DATA = [
       items: [
         {
           id: 1,
-          name: 'Adidas NMD',
-          imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+          name: 'Dark Souls',
+          imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/91ues7vkFhL._SL1500_.jpg',
           price: 220
         },
         {
           id: 2,
-          name: 'Adidas Yeezy',
-          imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+          name: 'Devil May Cry 5',
+          imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/91PHJ%2B3wEfL._SL1500_.jpg',
           price: 280
         },
         {
           id: 3,
-          name: 'Black Converse',
-          imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+          name: 'Cyberpunk 2077',
+          imageUrl: 'https://enjify.com/wp-content/uploads/2020/09/cyberpunk.png',
           price: 110
         },
         {
           id: 4,
-          name: 'Nike White AirForce',
-          imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+          name: 'Bayonetta',
+          imageUrl: 'https://i0.wp.com/images.vfl.ru/ii/1608703367/b87b0e52/32745458.jpg?resize=592%2C741&ssl=1',
           price: 160
         },
         {
