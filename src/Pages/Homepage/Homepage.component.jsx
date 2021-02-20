@@ -5,8 +5,13 @@ import './Homepage.styles.scss'
 
 
 const HomePage = () => (
-    <div className="homepage">
-        <DirectoryMenu />
+    <div>
+        <header className="header">
+            Header works
+        </header>
+        <div className="homepage">
+            <DirectoryMenu />
+        </div>
     </div>
 )
 
