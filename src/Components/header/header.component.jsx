@@ -13,13 +13,13 @@ const Header = ({currentUser}) => (
                 </Link>
             </li>
             <li><Link to="/shop" >Shop</Link></li>
-            <li><Link to="" >Contact</Link></li>
+            <li><Link to="" >Contact</Link></li> 
             {   
                 currentUser ?
                 <li className="push-right clickable" onClick={() => auth.signOut()}>Sign Out</li>
                 :
                 <li className="push-right"><Link to="/sign-in" >Sign In</Link></li>
-                
+                 
             }
             
         </ul>

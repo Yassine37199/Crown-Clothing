@@ -53,17 +53,17 @@ class SignIn extends Component {
                     name="password" 
                     value={this.state.password} 
                     type="password" 
-                    required 
+                    required  
                     handleChange={this.handleChange} 
                     label="Password"
-                    />
+                    /> 
 
                     <div className="button-wrapper">
                         <CustomButton type="submit" value="Submit Form"> Sign In</CustomButton>
                         <CustomButton onClick={SignInWithGoogle} GoogleSignIn> Sign In With Google</CustomButton>
                     </div>
                 </form>
-            </div>
+            </div> 
         )
     }
 }
