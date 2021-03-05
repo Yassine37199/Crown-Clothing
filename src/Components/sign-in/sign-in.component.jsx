@@ -18,13 +18,12 @@ class SignIn extends Component {
     
     handleChange = e => {
         const {value , name} = e.target;
-        console.log(value + ' ' + name);
         this.setState({
             [name] : value
         })
     }
 
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault();
         this.setState({
             email : '',
@@ -44,7 +43,8 @@ class SignIn extends Component {
                     <FormInput
                         name="email" 
                         value={this.state.email} 
-                        type="email" required 
+                        type="email" 
+                        required 
                         handleChange={this.handleChange} 
                         label="Email"
                         />
@@ -59,9 +59,9 @@ class SignIn extends Component {
                     /> 
 
                     <div className="button-wrapper">
-                        <CustomButton type="submit" value="Submit Form"> Sign In</CustomButton>
+                       <CustomButton type="submit" value="Submit Form"> Sign In</CustomButton>
                         <CustomButton onClick={SignInWithGoogle} GoogleSignIn> Sign In With Google</CustomButton>
-                    </div>
+                    </div> 
                 </form>
             </div> 
         )
