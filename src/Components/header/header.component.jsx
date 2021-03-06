@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.styles.scss'
 import {auth} from '../../firebase/firebase.utils'
+import {ReactComponent as Logo} from '../../Assets/crown.svg'
 
 
 const Header = ({currentUser}) => (
@@ -9,7 +10,7 @@ const Header = ({currentUser}) => (
         <ul className="nav-items">
             <li>
                 <Link to="/" className="logo-container">
-                    Logo
+                    <Logo />
                 </Link>
             </li>
             <li><Link to="/shop" >Shop</Link></li>

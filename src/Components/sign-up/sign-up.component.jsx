@@ -4,6 +4,9 @@ import CustomButton from '../custom-button/custom-button.component'
 import FormInput from '../form-input/form-input.component'
 
 
+import './sign-up.styles.scss'
+
+
 
 
 
@@ -31,7 +34,7 @@ class SignUp extends Component {
         event.preventDefault();
         const {displayName , email , password , confirmPass} = this.state;
         if (password !== confirmPass) {
-            alert("password don't match")
+            alert("Password don't match")
             return;
         }
 
@@ -47,7 +50,7 @@ class SignUp extends Component {
             })
         }
         catch (error) {
-            console.log(error);
+            alert(error.message)
 
         }
        
@@ -59,7 +62,7 @@ class SignUp extends Component {
             <div className="sign-up">
                 <h2 className="title">I do not have an account</h2>
                 <span>Sign up with your email and password</span>
-                <form className="sign-up" onSubmit={this.handleSubmit}>
+                <form  onSubmit={this.handleSubmit}>
 
                     <FormInput
                         type="text"

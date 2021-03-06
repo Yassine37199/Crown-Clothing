@@ -40,7 +40,7 @@ var firebaseConfig = {
             CreatedAt,
             ...AdditionalData
           })
-          console.log('user created successfully')
+          alert('user created successfully')
         }
         catch (err) {
           console.log('error occured while creating user ' + err.message );
