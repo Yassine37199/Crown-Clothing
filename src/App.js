@@ -54,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header currentUser={this.state.currentUser} />
+        <Header/>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/shop' component={shopPage} />
         <Route exact path='/sign-in' component={SignInUp} />
