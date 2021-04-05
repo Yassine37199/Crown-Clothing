@@ -8,7 +8,7 @@ import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
 
-const Header = ({currentUser}) => (
+const Header = ({currentUser , hidden}) => (
     <nav className="nav">
         <ul className="nav-items">
             <li>
@@ -26,14 +26,14 @@ const Header = ({currentUser}) => (
                  
             }
             <CartIcon />
-            
         </ul>
-        <CartDropdown />
+        { hidden ? null : <CartDropdown />}
     </nav>
 );
 
-const mapStateToProps = state => ({
-    currentUser : state.user.currentUser
+const mapStateToProps = ({user : {currentUser} , cart : {hidden}}) => ({
+    currentUser,
+    hidden
 });
 
 export default connect(mapStateToProps)(Header);
