@@ -6,9 +6,6 @@ import './Homepage.styles.scss'
 
 const HomePage = () => (
     <div>
-        <header className="header">
-            Header works
-        </header>
         <div className="homepage">
             <DirectoryMenu />
         </div>
