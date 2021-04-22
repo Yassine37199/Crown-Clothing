@@ -5,6 +5,8 @@ import {createStructuredSelector} from 'reselect'
 
 import './checkout.styles.scss'
 import CheckoutItem from '../../Components/checkout-item/checkout-item.component'
+import StripeCheckout from 'react-stripe-checkout'
+import StripeCheckoutButton from '../../Components/stripe-button/stripe-button.component'
 
 
 
@@ -36,9 +38,13 @@ const CheckoutPage = ({cartItems , cartItemsTotal}) => (
 
         <div className="total">
             <span>TOTAL : ${cartItemsTotal}</span>
+            </div>
+        <div className="test-warning">
+            *Please use the following test credit card for payements*
+            <br />
+            Visa : 4242 4242 4242 4242 - Exp : 05/21 - CVV : 123
         </div>
-
-
+        <StripeCheckoutButton price={cartItemsTotal} />
     </div>
  
 
