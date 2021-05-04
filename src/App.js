@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import HomePage from './Pages/Homepage/Homepage.component';
+import HomePage from './Pages/Homepage/homepage.component';
 import {Switch , Route , Redirect} from 'react-router-dom'
 import shopPage from './Pages/shop/shop.component';
 import Header from './Components/header/header.component';
