@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePage from './Pages/Homepage/homepage.component';
 import {Switch , Route , Redirect} from 'react-router-dom'
@@ -12,16 +11,15 @@ import {setCurrentUser} from './redux/user/user.action'
 import { selectCurrentUser } from './redux/user/user.selector';
 import { createStructuredSelector } from 'reselect';
 import CheckoutPage from './Pages/checkout/checkout.component';
-import CategoryPage from './Pages/collection/collection.component';
 
 class App extends Component {
 
   unsubscribeFromAuth = null
 
   componentDidMount(){
+    
+
     const {setCurrentUser} = this.props;
-
-
     this.unsubscribeFromAuth = auth.onAuthStateChanged( async userAuth => {
      if (userAuth) {
        const userRef = await createUserProfile(userAuth);

@@ -27,20 +27,12 @@ export const OptionsContainer = styled.div`
       justify-content: flex-end;
 `
 
-
-const OptionContainerStyles = css`
+export const OptionLink = styled(Link)`
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
 `
 
-export const OptionLink = styled(Link)`
-    ${OptionContainerStyles}
-`
-
-export const OptionDiv = styled.div`
-    ${OptionContainerStyles}
-`
 
 
 
